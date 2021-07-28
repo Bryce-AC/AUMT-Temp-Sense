@@ -5,7 +5,7 @@ MLX90621 tempSensor;
 
 void setup() {
   Serial.begin(115200);
-  Serial.println("\nTire temperature sensor starting...");
+  Serial.println("\nTyre temperature sensor starting...");
   Wire.begin();// Starting I2C
   for (int i = 0; i < 4; i++)
   {
