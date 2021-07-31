@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name tyre_temp_sense-rescue)(type Legacy)(uri ${KIPRJMOD}/tyre_temp_sense-rescue.lib)(options "")(descr ""))
-)
