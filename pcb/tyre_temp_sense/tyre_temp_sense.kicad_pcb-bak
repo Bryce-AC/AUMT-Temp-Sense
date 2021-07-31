@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 38)
+    (drawings 37)
     (tracks 391)
     (zones 0)
     (modules 47)
@@ -29,12 +29,12 @@
     (45 Margin user)
     (46 B.CrtYd user)
     (47 F.CrtYd user)
-    (48 B.Fab user)
-    (49 F.Fab user)
+    (48 B.Fab user hide)
+    (49 F.Fab user hide)
   )
 
   (setup
-    (last_trace_width 1)
+    (last_trace_width 0.25)
     (user_trace_width 0.3)
     (user_trace_width 1)
     (trace_clearance 0.2)
@@ -88,7 +88,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "Production/gerbers/"))
+      (outputdirectory "Production/"))
   )
 
   (net 0 "")
@@ -1967,9 +1967,6 @@
     )
   )
 
-  (gr_text JLCJLCJLCJLC (at 85.51 72.54 90) (layer F.SilkS)
-    (effects (font (size 1.5 1.5) (thickness 0.3)))
-  )
   (gr_circle (center 97.73 72.8) (end 97.95 72.85) (layer F.SilkS) (width 0.12))
   (gr_circle (center 95.14 53.94) (end 95.41 54.03) (layer F.SilkS) (width 0.12))
   (gr_circle (center 94.46 44.82) (end 94.67 44.9) (layer F.SilkS) (width 0.12))
@@ -2112,6 +2109,7 @@
   (segment (start 93.1375 70.844) (end 91.78057 70.844) (width 0.3) (layer F.Cu) (net 5))
   (segment (start 98.8625 72.144) (end 98.8625 72.794) (width 0.3) (layer F.Cu) (net 5))
   (via (at 99.06 73.406) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 5))
+  (segment (start 98.8625 73.2085) (end 99.06 73.406) (width 0.3) (layer F.Cu) (net 5))
   (segment (start 98.8625 72.794) (end 98.8625 73.2085) (width 0.3) (layer F.Cu) (net 5))
   (via (at 91.948 76.2) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 5))
   (segment (start 91.974 76.226) (end 91.948 76.2) (width 1) (layer F.Cu) (net 5))
@@ -2155,7 +2153,6 @@
   (segment (start 87.884 40.894) (end 87.884 40.942) (width 1) (layer F.Cu) (net 5))
   (segment (start 88.572 41.476) (end 89.154 40.894) (width 1) (layer F.Cu) (net 5))
   (segment (start 88.572 41.63) (end 88.572 41.476) (width 1) (layer F.Cu) (net 5))
-  (segment (start 98.8625 73.2085) (end 99.06 73.406) (width 0.3) (layer F.Cu) (net 5))
   (segment (start 109.18 50.8) (end 109.18 52.11) (width 1) (layer B.Cu) (net 9))
   (segment (start 109.18 52.11) (end 102.87 58.42) (width 1) (layer B.Cu) (net 9))
   (segment (start 92.571823 56.515) (end 91.806677 57.280146) (width 0.3) (layer F.Cu) (net 9))
@@ -2448,7 +2445,7 @@
   (segment (start 89.542001 84.208001) (end 89.542001 97.797001) (width 0.3) (layer F.Cu) (net 64))
   (segment (start 88.392 83.058) (end 89.542001 84.208001) (width 0.3) (layer F.Cu) (net 64))
 
-  (zone (net 5) (net_name GND) (layer B.Cu) (tstamp 61078187) (hatch edge 0.508)
+  (zone (net 5) (net_name GND) (layer B.Cu) (tstamp 610774DD) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))

@@ -1,8 +1,0 @@
-Notes for tyre temp board
-
-- increase sizing for CAN termination resistor
-	- use throughhole part (don't need to populate)
-
-- rearrange CAN section to minimise distance from controller to Arduino
-
-- try to minimise loops
