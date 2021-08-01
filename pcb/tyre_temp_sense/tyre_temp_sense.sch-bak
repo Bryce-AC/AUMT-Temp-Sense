@@ -21,6 +21,7 @@ F 0 "U2" H 6850 3050 50  0000 C CNN
 F 1 "MCP2515-I/ST" H 7050 2950 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 6650 1200 50  0001 C CIN
 F 3 "https://datasheet.lcsc.com/lcsc/1809191814_Microchip-Tech-MCP2515-I-ST_C15193.pdf" H 6750 1300 50  0001 C CNN
+F 4 "C15193" H 6650 2100 50  0001 C CNN "LCSC"
 	1    6650 2100
 	1    0    0    -1  
 $EndComp
@@ -31,7 +32,8 @@ P 9350 2000
 F 0 "U3" H 8650 2600 50  0000 C CNN
 F 1 "MCP2551-I-SN" H 8900 2500 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9350 1500 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 9350 2000 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809192221_Microchip-Tech-MCP2551T-I-SN_C49558.pdf" H 9350 2000 50  0001 C CNN
+F 4 "C49558" H 9350 2000 50  0001 C CNN "LCSC"
 	1    9350 2000
 	1    0    0    -1  
 $EndComp
@@ -881,7 +883,8 @@ P 5100 5450
 F 0 "U1" H 5650 6400 50  0000 C CNN
 F 1 "TCA9548APWR" H 5650 6300 50  0000 C CNN
 F 2 "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm" H 5100 4450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tca9548a.pdf" H 5150 5700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1811081942_Texas-Instruments-TCA9548APWR_C130026.pdf" H 5150 5700 50  0001 C CNN
+F 4 "C130026" H 5100 5450 50  0001 C CNN "LCSC"
 	1    5100 5450
 	1    0    0    -1  
 $EndComp
@@ -1161,7 +1164,8 @@ P 9900 1750
 F 0 "R14" H 9970 1796 50  0000 L CNN
 F 1 "120" H 9970 1705 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 9830 1750 50  0001 C CNN
-F 3 "~" H 9900 1750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810301422_UNI-ROYAL-Uniroyal-Elec-1206W4F1204T5E_C22107.pdf" H 9900 1750 50  0001 C CNN
+F 4 "C22107" H 9900 1750 50  0001 C CNN "LCSC"
 	1    9900 1750
 	1    0    0    -1  
 $EndComp
