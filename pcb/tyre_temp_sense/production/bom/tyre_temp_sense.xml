@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\bryce\Documents\GitHub\AUMT-Temp-Sense\pcb\tyre_temp_sense\tyre_temp_sense.sch</source>
+    <date>1/08/2021 10:05:14 PM</date>
+    <tool>Eeschema (5.1.9)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>tyre_temp_sense.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U2">
+      <value>MCP2515-I/ST</value>
+      <footprint>Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1809191814_Microchip-Tech-MCP2515-I-ST_C15193.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C15193</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="MCP2515-xST-Interface_CAN_LIN" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61019D23</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>MCP2551-I-SN</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1809192221_Microchip-Tech-MCP2551T-I-SN_C49558.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C49558</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="MCP2551-I-SN-Interface_CAN_LIN" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6101A557</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810261812_Samsung-Electro-Mechanics-CL10A105KB8NNNC_C15849.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C15849</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="C-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6101F44E</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>30pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1809300925_Samsung-Electro-Mechanics-CL10C300JB8NNNC_C22397.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C22397</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="C-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6102046F</tstamp>
+    </comp>
+    <comp ref="Y1">
+      <value>8 mhz</value>
+      <footprint>Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2103291135_Yangxing-Tech-X50328MSB2GI_C115962.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C115962</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="Crystal-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61021309</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>30pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1809300925_Samsung-Electro-Mechanics-CL10C300JB8NNNC_C22397.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C22397</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="C-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>610207D1</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811062009_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C25804</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="R-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6102CFB8</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811062009_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C25804</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="R-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>610314D5</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>POWER &amp; CAN</value>
+      <footprint>Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="tyre_temp_sense-rescue" part="Conn_01x04-Connector_Generic" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61036118</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>Conn_01x02</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="tyre_temp_sense-rescue" part="Conn_01x02-Connector_Generic" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6103FEB4</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810191219_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C19702</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="C-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6105AA8F</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811062009_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C25804</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="R-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61063596</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>MUX Port 1</value>
+      <footprint>Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="tyre_temp_sense-rescue" part="Conn_01x04-Connector_Generic" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6107D7A2</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>MUX Port 2</value>
+      <footprint>Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="tyre_temp_sense-rescue" part="Conn_01x04-Connector_Generic" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6107FA67</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>MUX Port 0</value>
+      <footprint>Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="tyre_temp_sense-rescue" part="Conn_01x04-Connector_Generic" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61047D04</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>MUX Port 3</value>
+      <footprint>Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="tyre_temp_sense-rescue" part="Conn_01x04-Connector_Generic" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6109581C</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>4.7K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810200710_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C23162</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="R-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>610DEB4F</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>4.7K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810200710_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C23162</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="R-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61171CA6</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>4.7K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810200710_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C23162</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="R-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61186F84</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>4.7K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810200710_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C23162</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="R-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6128F5AB</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>4.7K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810200710_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C23162</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="R-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61292862</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>4.7K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810200710_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C23162</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="R-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61292868</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>4.7K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810200710_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C23162</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="R-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612960CE</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>4.7K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810200710_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C23162</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="R-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612960D4</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>4.7K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810200710_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C23162</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="R-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612960DA</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>4.7K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810200710_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C23162</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="R-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612960E0</tstamp>
+    </comp>
+    <comp ref="A1">
+      <value>Arduino_Nano_v3.x</value>
+      <footprint>Module:Arduino_Nano</footprint>
+      <datasheet>http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf</datasheet>
+      <libsource lib="tyre_temp_sense-rescue" part="Arduino_Nano_v3.x-MCU_Module" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61016BB2</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>CAN_H</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="tyre_temp_sense-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6137F93A</tstamp>
+    </comp>
+    <comp ref="TP3">
+      <value>CAN_L</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="tyre_temp_sense-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61381C92</tstamp>
+    </comp>
+    <comp ref="TP8">
+      <value>RX</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="tyre_temp_sense-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613E761C</tstamp>
+    </comp>
+    <comp ref="TP9">
+      <value>TX</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="tyre_temp_sense-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613E7C2F</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>TCA9548APWR</value>
+      <footprint>Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811081942_Texas-Instruments-TCA9548APWR_C130026.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C130026</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="TCA9548APWR-Interface_Expansion" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6104696B</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>A</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="tyre_temp_sense-rescue" part="Conn_01x04_Male-Connector" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613EDDA2</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>GND</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="tyre_temp_sense-rescue" part="Conn_01x04_Male-Connector" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>610B8C24</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>GND</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="tyre_temp_sense-rescue" part="Conn_01x04_Male-Connector" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>610B98EF</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>120</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810301422_UNI-ROYAL-Uniroyal-Elec-1206W4F1204T5E_C22107.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C22107</field>
+      </fields>
+      <libsource lib="tyre_temp_sense-rescue" part="R-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>610406E3</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="tyre_temp_sense-rescue" part="Arduino_Nano_v3.x-MCU_Module">
+      <footprints>
+        <fp>Arduino*Nano*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">A</field>
+        <field name="Value">Arduino_Nano_v3.x-MCU_Module</field>
+        <field name="Footprint">Module:Arduino_Nano</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D1/TX" type="BiDi"/>
+        <pin num="2" name="D0/RX" type="BiDi"/>
+        <pin num="3" name="~RESET" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="D2" type="BiDi"/>
+        <pin num="6" name="D3" type="BiDi"/>
+        <pin num="7" name="D4" type="BiDi"/>
+        <pin num="8" name="D5" type="BiDi"/>
+        <pin num="9" name="D6" type="BiDi"/>
+        <pin num="10" name="D7" type="BiDi"/>
+        <pin num="11" name="D8" type="BiDi"/>
+        <pin num="12" name="D9" type="BiDi"/>
+        <pin num="13" name="D10" type="BiDi"/>
+        <pin num="14" name="D11" type="BiDi"/>
+        <pin num="15" name="D12" type="BiDi"/>
+        <pin num="16" name="D13" type="BiDi"/>
+        <pin num="17" name="3V3" type="power_out"/>
+        <pin num="18" name="AREF" type="input"/>
+        <pin num="19" name="A0" type="BiDi"/>
+        <pin num="20" name="A1" type="BiDi"/>
+        <pin num="21" name="A2" type="BiDi"/>
+        <pin num="22" name="A3" type="BiDi"/>
+        <pin num="23" name="A4" type="BiDi"/>
+        <pin num="24" name="A5" type="BiDi"/>
+        <pin num="25" name="A6" type="BiDi"/>
+        <pin num="26" name="A7" type="BiDi"/>
+        <pin num="27" name="+5V" type="power_out"/>
+        <pin num="28" name="~RESET" type="input"/>
+        <pin num="29" name="GND" type="power_in"/>
+        <pin num="30" name="VIN" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="tyre_temp_sense-rescue" part="C-Device">
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="tyre_temp_sense-rescue" part="Conn_01x02-Connector_Generic">
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02-Connector_Generic</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="tyre_temp_sense-rescue" part="Conn_01x04-Connector_Generic">
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04-Connector_Generic</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="tyre_temp_sense-rescue" part="Conn_01x04_Male-Connector">
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04_Male-Connector</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="tyre_temp_sense-rescue" part="Crystal-Device">
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="tyre_temp_sense-rescue" part="MCP2515-xST-Interface_CAN_LIN">
+      <footprints>
+        <fp>TSSOP*4.4x6.5mm*P0.65mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP2515-xST-Interface_CAN_LIN</field>
+        <field name="Footprint">Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TXCAN" type="output"/>
+        <pin num="2" name="RXCAN" type="input"/>
+        <pin num="3" name="CLKOUT/SOF" type="output"/>
+        <pin num="4" name="~TX0RTS" type="input"/>
+        <pin num="5" name="~TX1RTS" type="input"/>
+        <pin num="6" name="NC" type="NotConnected"/>
+        <pin num="7" name="~TX2RTS" type="input"/>
+        <pin num="8" name="OSC2" type="output"/>
+        <pin num="9" name="OSC1" type="input"/>
+        <pin num="10" name="VSS" type="power_in"/>
+        <pin num="11" name="~RX1BF" type="output"/>
+        <pin num="12" name="~RX0BF" type="output"/>
+        <pin num="13" name="~INT" type="output"/>
+        <pin num="14" name="SCK" type="input"/>
+        <pin num="15" name="NC" type="NotConnected"/>
+        <pin num="16" name="SI" type="input"/>
+        <pin num="17" name="SO" type="output"/>
+        <pin num="18" name="~CS" type="input"/>
+        <pin num="19" name="~RESET" type="input"/>
+        <pin num="20" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="tyre_temp_sense-rescue" part="MCP2551-I-SN-Interface_CAN_LIN">
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP2551-I-SN-Interface_CAN_LIN</field>
+        <field name="Footprint">Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TXD" type="input"/>
+        <pin num="2" name="VSS" type="power_in"/>
+        <pin num="3" name="VDD" type="power_in"/>
+        <pin num="4" name="RXD" type="output"/>
+        <pin num="5" name="Vref" type="power_out"/>
+        <pin num="6" name="CANL" type="BiDi"/>
+        <pin num="7" name="CANH" type="BiDi"/>
+        <pin num="8" name="Rs" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="tyre_temp_sense-rescue" part="R-Device">
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="tyre_temp_sense-rescue" part="TCA9548APWR-Interface_Expansion">
+      <footprints>
+        <fp>TSSOP*4.4x7.8mm*P0.65mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TCA9548APWR-Interface_Expansion</field>
+        <field name="Footprint">Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="A1" type="input"/>
+        <pin num="3" name="~RESET" type="input"/>
+        <pin num="4" name="SD0" type="BiDi"/>
+        <pin num="5" name="SC0" type="output"/>
+        <pin num="6" name="SD1" type="BiDi"/>
+        <pin num="7" name="SC1" type="output"/>
+        <pin num="8" name="SD2" type="BiDi"/>
+        <pin num="9" name="SC2" type="output"/>
+        <pin num="10" name="SD3" type="BiDi"/>
+        <pin num="11" name="SC3" type="output"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="SD4" type="BiDi"/>
+        <pin num="14" name="SC4" type="output"/>
+        <pin num="15" name="SD5" type="BiDi"/>
+        <pin num="16" name="SC5" type="output"/>
+        <pin num="17" name="SD6" type="BiDi"/>
+        <pin num="18" name="SC6" type="output"/>
+        <pin num="19" name="SD7" type="BiDi"/>
+        <pin num="20" name="SC7" type="output"/>
+        <pin num="21" name="A2" type="input"/>
+        <pin num="22" name="SCL" type="input"/>
+        <pin num="23" name="SDA" type="BiDi"/>
+        <pin num="24" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="tyre_temp_sense-rescue" part="TestPoint-Connector">
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint-Connector</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="tyre_temp_sense-rescue">
+      <uri>C:\Users\bryce\Documents\GitHub\AUMT-Temp-Sense\pcb\tyre_temp_sense/tyre_temp_sense-rescue.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="SDA">
+      <node ref="A1" pin="23"/>
+      <node ref="U1" pin="23"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="2" name="Net-(A1-Pad8)">
+      <node ref="A1" pin="8"/>
+    </net>
+    <net code="3" name="Net-(A1-Pad7)">
+      <node ref="A1" pin="7"/>
+    </net>
+    <net code="4" name="Net-(A1-Pad6)">
+      <node ref="A1" pin="6"/>
+    </net>
+    <net code="5" name="D2">
+      <node ref="U2" pin="13"/>
+      <node ref="A1" pin="5"/>
+    </net>
+    <net code="6" name="Net-(A1-Pad30)">
+      <node ref="A1" pin="30"/>
+    </net>
+    <net code="7" name="Net-(A1-Pad3)">
+      <node ref="A1" pin="3"/>
+    </net>
+    <net code="8" name="Net-(A1-Pad28)">
+      <node ref="A1" pin="28"/>
+    </net>
+    <net code="9" name="Net-(A1-Pad26)">
+      <node ref="A1" pin="26"/>
+    </net>
+    <net code="10" name="Net-(A1-Pad25)">
+      <node ref="A1" pin="25"/>
+    </net>
+    <net code="11" name="SCL">
+      <node ref="U1" pin="22"/>
+      <node ref="R2" pin="2"/>
+      <node ref="A1" pin="24"/>
+    </net>
+    <net code="12" name="A3">
+      <node ref="A1" pin="22"/>
+      <node ref="J7" pin="1"/>
+    </net>
+    <net code="13" name="A2">
+      <node ref="J7" pin="2"/>
+      <node ref="A1" pin="21"/>
+    </net>
+    <net code="14" name="A1">
+      <node ref="J7" pin="3"/>
+      <node ref="A1" pin="20"/>
+    </net>
+    <net code="15" name="Net-(A1-Pad2)">
+      <node ref="TP8" pin="1"/>
+      <node ref="A1" pin="2"/>
+    </net>
+    <net code="16" name="A0">
+      <node ref="A1" pin="19"/>
+      <node ref="J7" pin="4"/>
+    </net>
+    <net code="17" name="Net-(A1-Pad18)">
+      <node ref="A1" pin="18"/>
+    </net>
+    <net code="18" name="MISO_CAN">
+      <node ref="U2" pin="17"/>
+      <node ref="A1" pin="15"/>
+    </net>
+    <net code="19" name="MOSI_CAN">
+      <node ref="U2" pin="16"/>
+      <node ref="A1" pin="14"/>
+    </net>
+    <net code="20" name="Net-(A1-Pad13)">
+      <node ref="A1" pin="13"/>
+    </net>
+    <net code="21" name="Net-(A1-Pad12)">
+      <node ref="A1" pin="12"/>
+    </net>
+    <net code="22" name="Net-(A1-Pad11)">
+      <node ref="A1" pin="11"/>
+    </net>
+    <net code="23" name="Net-(U1-Pad15)">
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="24" name="Net-(U1-Pad14)">
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="25" name="Net-(U1-Pad13)">
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="26" name="Net-(A1-Pad1)">
+      <node ref="A1" pin="1"/>
+      <node ref="TP9" pin="1"/>
+    </net>
+    <net code="27" name="Net-(A1-Pad10)">
+      <node ref="A1" pin="10"/>
+    </net>
+    <net code="28" name="Net-(J4-Pad1)">
+      <node ref="R9" pin="2"/>
+      <node ref="U1" pin="8"/>
+      <node ref="J4" pin="1"/>
+    </net>
+    <net code="29" name="Net-(J4-Pad2)">
+      <node ref="U1" pin="9"/>
+      <node ref="J4" pin="2"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="30" name="Net-(J3-Pad1)">
+      <node ref="R7" pin="2"/>
+      <node ref="J3" pin="1"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="31" name="Net-(J5-Pad1)">
+      <node ref="U1" pin="10"/>
+      <node ref="J5" pin="1"/>
+      <node ref="R11" pin="2"/>
+    </net>
+    <net code="32" name="Net-(U1-Pad16)">
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="33" name="Net-(J5-Pad2)">
+      <node ref="U1" pin="11"/>
+      <node ref="J5" pin="2"/>
+      <node ref="R10" pin="2"/>
+    </net>
+    <net code="34" name="GND">
+      <node ref="U1" pin="2"/>
+      <node ref="U1" pin="21"/>
+      <node ref="J8" pin="1"/>
+      <node ref="U2" pin="10"/>
+      <node ref="J1" pin="1"/>
+      <node ref="R13" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="U3" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="J8" pin="4"/>
+      <node ref="J8" pin="3"/>
+      <node ref="J8" pin="2"/>
+      <node ref="J3" pin="3"/>
+      <node ref="J4" pin="3"/>
+      <node ref="J2" pin="3"/>
+      <node ref="J5" pin="3"/>
+      <node ref="C3" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="U1" pin="12"/>
+      <node ref="A1" pin="29"/>
+      <node ref="A1" pin="4"/>
+    </net>
+    <net code="35" name="Net-(U1-Pad19)">
+      <node ref="U1" pin="19"/>
+    </net>
+    <net code="36" name="Net-(U1-Pad20)">
+      <node ref="U1" pin="20"/>
+    </net>
+    <net code="37" name="Net-(U1-Pad17)">
+      <node ref="U1" pin="17"/>
+    </net>
+    <net code="38" name="Net-(U1-Pad18)">
+      <node ref="U1" pin="18"/>
+    </net>
+    <net code="39" name="Net-(J6-Pad1)">
+      <node ref="J6" pin="1"/>
+      <node ref="R14" pin="1"/>
+    </net>
+    <net code="40" name="+3V3">
+      <node ref="J5" pin="4"/>
+      <node ref="J2" pin="4"/>
+      <node ref="A1" pin="17"/>
+      <node ref="J4" pin="4"/>
+      <node ref="J3" pin="4"/>
+    </net>
+    <net code="41" name="Net-(J3-Pad2)">
+      <node ref="R6" pin="2"/>
+      <node ref="J3" pin="2"/>
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="42" name="Net-(J2-Pad2)">
+      <node ref="U1" pin="5"/>
+      <node ref="R4" pin="2"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="43" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1"/>
+      <node ref="R5" pin="2"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="44" name="Net-(R1-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="45" name="+5V">
+      <node ref="C3" pin="2"/>
+      <node ref="C4" pin="1"/>
+      <node ref="R9" pin="1"/>
+      <node ref="R5" pin="1"/>
+      <node ref="R8" pin="1"/>
+      <node ref="R10" pin="1"/>
+      <node ref="R7" pin="1"/>
+      <node ref="R11" pin="1"/>
+      <node ref="R6" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="U1" pin="24"/>
+      <node ref="J1" pin="2"/>
+      <node ref="J9" pin="4"/>
+      <node ref="J9" pin="3"/>
+      <node ref="J9" pin="2"/>
+      <node ref="J9" pin="1"/>
+      <node ref="R12" pin="1"/>
+      <node ref="A1" pin="27"/>
+      <node ref="U2" pin="20"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="46" name="Net-(R12-Pad2)">
+      <node ref="U2" pin="19"/>
+      <node ref="R12" pin="2"/>
+    </net>
+    <net code="47" name="CLK_CAN">
+      <node ref="A1" pin="16"/>
+      <node ref="U2" pin="14"/>
+    </net>
+    <net code="48" name="D6">
+      <node ref="A1" pin="9"/>
+      <node ref="U2" pin="18"/>
+    </net>
+    <net code="49" name="Net-(R13-Pad1)">
+      <node ref="U3" pin="8"/>
+      <node ref="R13" pin="1"/>
+    </net>
+    <net code="50" name="Net-(U2-Pad1)">
+      <node ref="U2" pin="1"/>
+      <node ref="U3" pin="1"/>
+    </net>
+    <net code="51" name="Net-(U2-Pad2)">
+      <node ref="U3" pin="4"/>
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="52" name="Net-(U2-Pad4)">
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="53" name="CAN+">
+      <node ref="U3" pin="7"/>
+      <node ref="J1" pin="3"/>
+      <node ref="TP3" pin="1"/>
+      <node ref="R14" pin="2"/>
+    </net>
+    <net code="54" name="CAN-">
+      <node ref="J1" pin="4"/>
+      <node ref="J6" pin="2"/>
+      <node ref="U3" pin="6"/>
+      <node ref="TP1" pin="1"/>
+    </net>
+    <net code="55" name="Net-(U3-Pad5)">
+      <node ref="U3" pin="5"/>
+    </net>
+    <net code="56" name="Net-(C2-Pad1)">
+      <node ref="Y1" pin="2"/>
+      <node ref="U2" pin="9"/>
+      <node ref="C2" pin="1"/>
+    </net>
+    <net code="57" name="Net-(C1-Pad1)">
+      <node ref="U2" pin="8"/>
+      <node ref="C1" pin="1"/>
+      <node ref="Y1" pin="1"/>
+    </net>
+    <net code="58" name="Net-(U2-Pad7)">
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="59" name="Net-(U2-Pad6)">
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="60" name="Net-(U2-Pad5)">
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="61" name="Net-(U2-Pad3)">
+      <node ref="U2" pin="3"/>
+    </net>
+    <net code="62" name="Net-(U2-Pad15)">
+      <node ref="U2" pin="15"/>
+    </net>
+    <net code="63" name="Net-(U2-Pad12)">
+      <node ref="U2" pin="12"/>
+    </net>
+    <net code="64" name="Net-(U2-Pad11)">
+      <node ref="U2" pin="11"/>
+    </net>
+  </nets>
+</export>
