@@ -47,7 +47,7 @@ void tcaselect(uint8_t i) {
   Wire.endTransmission();
 }
 
-unsigned char stmp[2] = {0, 0};
+byte stmp[2] = {0, 0};
 
 void loop() {
   //  for (int id = 0; id < 10; id++) {
@@ -70,11 +70,19 @@ void loop() {
   //sensor has 4 rows of 16 data points. grab first row for now.
   int row = 0;
   //iterate over each column in the data and store into temp_pkt
-  stmp[0] = tempSensor.getTemperature(1)/2;
-  stmp[1] = stmp[0];
-  SERIAL_PORT_MONITOR.println(stmp[0]);
-  CAN.sendMsgBuf(0x123, 0, 2, stmp);
-  delay(5);
+  float temp_temp = tempSensor.getTemperature(1)/2;
+//  SERIAL_PORT_MONITOR.println(temp_temp);
+//  stmp[0] = temp_temp;
+//  stmp[1] = stmp[0];
+////  SERIAL_PORT_MONITOR.println(stmp[0]);
+//  CAN.sendMsgBuf(0x169, 0, 2, stmp);
+//  delay(5);
+
+uint16_t tyre16 = temp_temp*100.0;
+SERIAL_PORT_MONITOR.println(tyre16); 
+CAN.sendMsgBuf(0x169, 0, 2, tyre16);
+delay(5);
+
 
 //  Serial.println(sizeof(stmp[0]));
 //  //Go up and down 20 LEDs ####################################
