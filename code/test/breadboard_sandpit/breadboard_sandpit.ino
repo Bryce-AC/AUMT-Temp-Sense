@@ -78,8 +78,8 @@ void loop() {
 //  CAN.sendMsgBuf(0x169, 0, 2, stmp);
 //  delay(5);
 
-//uint16_t tyre16 = temp_temp*100.0;
-uint16_t tyre16 = 255;
+uint16_t tyre16 = temp_temp*100.0;
+//uint16_t tyre16 = 255;
 SERIAL_PORT_MONITOR.println(tyre16); 
 CAN.sendMsgBuf(0x169, 0, 2, tyre16);
 delay(5);

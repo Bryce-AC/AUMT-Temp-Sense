@@ -18,7 +18,8 @@ void setup() {
 
 }
 
-void tcaselect(uint8_t i) {
+void tcaselect(uint8_t i)
+{
   if (i > 7) return;
 
   Wire.beginTransmission(0x70);
@@ -37,8 +38,13 @@ void get_temp(int port, float (& tyre_array)[16])
   //iterate over each column in the data and store into temp_pkt
   for (int col = 0; col < 16; col++)
   {
-    int point = row * 16 + col;
-    tyre_array[col] = tempSensor.getTemperature(point);
+    tyre_array[col] = 0;
+    for (int row = 0; row < 4; row++)
+    {
+      int point = row * 16 + col;
+      tyre_array[col] = tyre_array[col] + tempSensor.getTemperature(point);
+    }
+    tyre_array[col] = tyre_array[col] / 4;
   }
 }
 
@@ -72,7 +78,6 @@ void loop()
   print_temp(1, front_r);
   print_temp(2, rear_l);
   print_temp(3, rear_r);
-  
-  delay(1000);
 
+  delay(1000);
 }
