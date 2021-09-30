@@ -3,8 +3,22 @@
 
 MLX90621 tempSensor;
 
+#include <SPI.h>
+#include <mcp2515.h>
+MCP2515 mcp2515(6);
+
+struct can_frame front;
+struct can_frame canMsg;
+
 void setup() {
   Serial.begin(115200);
+
+  mcp2515.reset();
+  mcp2515.setBitrate(CAN_250KBPS, MCP_8MHZ);
+  mcp2515.setNormalMode();
+  canMsg.can_dlc = 8;
+
+
   Serial.println("\nTyre temperature sensor starting...");
   Wire.begin();// Starting I2C
   for (int i = 0; i < 4; i++)
@@ -43,6 +57,7 @@ void get_temp(int port, float (& tyre_array)[16])
     {
       int point = row * 16 + col;
       tyre_array[col] = tyre_array[col] + tempSensor.getTemperature(point);
+      
     }
     tyre_array[col] = tyre_array[col] / 4;
   }
@@ -61,23 +76,48 @@ void print_temp(int port, float (& tyre_array)[16])
   Serial.print("\n");
 }
 
-//setup arrays for each tyre
-float front_l[16];
-float front_r[16];
-float rear_l[16];
-float rear_r[16];
+void array_to_intx100( float(& tyre_array)[16], uint16_t(&tyre_int)[8] ){
+  for(int col = 0; col < 8; col++){
+    float average = tyre_array[col*2] + tyre_array[col*2 + 1] / 2.0;
+    average = average * 100.0;
+    tyre_int[col] = (uint16_t) average;
+  }
+}
+
+//temporary tyre array
+float tyre[16];
+int can_id;
+uint16_t tyre_int[8];
 
 void loop()
 {
-  get_temp(0, front_l);
-  get_temp(1, front_r);
-  get_temp(2, rear_l);
-  get_temp(3, rear_r);
+  can_id = 0x169;
+  for (int port = 0; port < 1; port++)
+  { 
+    // put temps for port x in tyre array
+    get_temp(port, tyre);
+    // convert to 16 bit int * 100
+    array_to_intx100(tyre, tyre_int);
+    
+    for (int col = 0; col < 2; col++)
+    {
+      memcpy( &canMsg.data[0],  &tyre_int[col*4], sizeof(uint16_t) );
+      memcpy( &canMsg.data[2],  &tyre_int[col*4+1], sizeof(uint16_t) );
+      memcpy( &canMsg.data[4],  &tyre_int[col*4+2], sizeof(uint16_t) );
+      memcpy( &canMsg.data[6],  &tyre_int[col*4+3], sizeof(uint16_t) );
+      canMsg.can_id  = can_id;
+      mcp2515.sendMessage(&canMsg);
+      if (can_id == 0x169)
+      {
+        Serial.println(tyre[0]);
+        Serial.println(tyre_int[col*4]);
+        Serial.println(tyre_int[col*4+1]);
+        Serial.println(tyre_int[col*4+2]);
+        Serial.println(tyre_int[col*4+3]);        
+      }
 
-  print_temp(0, front_l);
-  print_temp(1, front_r);
-  print_temp(2, rear_l);
-  print_temp(3, rear_r);
-
-  delay(1000);
+      can_id = can_id + 1;
+    }
+  }
+  delay(100);
 }
